@@ -1,0 +1,10 @@
+hour = int(input("Starting time (hours): "))
+mins = int(input("Starting time (minutes): "))
+dura = int(input("Event duration (minutes): "))
+
+# code to calculate total end time required
+total_min = hour * 60 + mins + dura                    # convert all data in mint to make it easy for calculation and calculate total mints.
+end_hour = (total_min // 60 ) % 24                     # hour at which event end from total mins.
+end_minute = total_min % 60                            # end mins from total min.
+end_time=(str(end_hour) + ":" + str(end_minute))       # store the result in a variable
+print(end_time)                                        # show the result to console
