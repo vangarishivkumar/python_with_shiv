@@ -9,10 +9,10 @@ beatles.append('George Harrison')
 print('step 2:', beatles)
 
 # step 3
-for i in range(2):
-    n1=str(input('Enter name to add in band:'))
-    beatles.append(n1)
-print("Step 3:", beatles)
+#for i in range(2):
+#    n1=str(input('Enter name to add in band:'))
+#    beatles.append(n1)
+#print("Step 3:", beatles)
 
 # step 4
 del beatles[-1]
