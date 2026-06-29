@@ -1,3 +1,8 @@
+#######################################################################
+### Author       : Shivkumar Vangari                                 ##
+### Date written : 29/06/2026                                        ##
+### code to append(last), delete, insert(at given index) in a list   ##
+#######################################################################
 # step 1
 beatles=[]
 print("Step 1:", beatles)
