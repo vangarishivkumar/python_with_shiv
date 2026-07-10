@@ -80,10 +80,34 @@ print(strange_list_fun(5))
 print("automate list of 5 elements in order:")
 def strange_list_fun(n):
     strange_list = []
+    c_list = []
     
     for i in range(0, n):
-        strange_list.append(i)
-    
-    return strange_list
+        strange_list.insert(0,i)
+        c_list.append(i)
+    return strange_list,c_list
 
 print(strange_list_fun(5))
+
+
+## to check year is even leap or not.
+
+def is_year_leap(year):
+    #print('year is',year)
+    if year %2 == 0:
+        return True
+    else:
+        return False
+
+
+test_data = [1900, 2000, 2016, 1987]
+test_results = [False, True, True, False]
+for i in range(len(test_data)):
+	yr = test_data[i]
+	print(yr,"->",end="")
+	result = is_year_leap(yr)
+	#if result == test_results[i]:
+	if result:
+		print("OK")
+	else:
+		print("Failed")
